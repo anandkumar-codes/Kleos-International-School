@@ -1,0 +1,63 @@
+:root {
+  /* Brand — drawn from the campus façade and the Kleos logo */
+  --green-950: #05281e;
+  --green-900: #083a2c;
+  --green-800: #0b4d3a;
+  --green-700: #10624a;
+  --green-600: #177a5b;
+  --green-500: #24946f;
+  --green-200: #bfe0d1;
+  --green-100: #dff0e8;
+  --green-50: #f0f8f4;
+
+  --gold-600: #c98520;
+  --gold-500: #e8a53b;
+  --gold-400: #f1bd66;
+  --gold-100: #fcefd6;
+
+  --red-600: #a8262f;
+  --red-500: #c8323c;
+  --red-100: #fbe3e4;
+
+  --blue-500: #2d7dd2;
+  --blue-100: #e2eefb;
+  --purple-500: #7f56c8;
+  --purple-100: #eee7fa;
+  --amber-500: #d98a10;
+  --amber-100: #fdf0d8;
+
+  /* Neutrals */
+  --cream: #fbf8f1;
+  --cream-2: #f3eee2;
+  --paper: #ffffff;
+  --canvas: #f3f6f4;
+  --ink-900: #13201b;
+  --ink-800: #22322c;
+  --ink-700: #3b4c46;
+  --ink-500: #64746e;
+  --ink-400: #8b9893;
+  --ink-300: #b7c1bd;
+  --line: #e7e2d6;
+  --line-cool: #e3e9e6;
+
+  /* Type */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Shape & depth */
+  --r-xs: 8px;
+  --r-sm: 10px;
+  --r: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-full: 999px;
+  --sh-1: 0 1px 2px rgba(15, 40, 32, 0.06), 0 1px 1px rgba(15, 40, 32, 0.03);
+  --sh-2: 0 6px 16px -4px rgba(15, 40, 32, 0.08), 0 2px 4px rgba(15, 40, 32, 0.04);
+  --sh-3: 0 24px 48px -16px rgba(8, 58, 44, 0.24), 0 4px 10px rgba(15, 40, 32, 0.05);
+  --sh-focus: 0 0 0 4px rgba(36, 148, 111, 0.18);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --container: 1240px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --header-h: 76px;
+}

@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Kleos School",
+    "slug": "kleos-school",
+    "scheme": "kleos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBF8F1",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "in.kleosschool.app"
+    },
+    "android": {
+      "package": "in.kleosschool.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B4D3A",
+        "foregroundImage": "./assets/images/adaptive-foreground.png",
+        "monochromeImage": "./assets/images/adaptive-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-image",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B4D3A"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

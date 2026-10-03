@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, Phone, Mail, Users, GraduationCap, ChevronRight, Building2, Palette, UserRound, Images, ShieldCheck, ArrowRight } from 'lucide-react';
 import { Logo, Button } from '../ui';
 import { SCHOOL } from '../../data/school';
+import LiveClock from './LiveClock';
 import { useScrolled, useLockBody } from '../../hooks';
 
 const CAMPUS = [
@@ -78,6 +79,7 @@ export default function Header() {
             )}
           </nav>
           <div className="header-cta">
+            <LiveClock />
             <Button variant="gold" to="/admissions#apply" iconRight={ArrowRight}>Apply Now</Button>
             <button className="icon-btn menu-toggle" onClick={() => setOpen(true)} aria-label="Open menu">
               <Menu />
@@ -100,6 +102,7 @@ export default function Header() {
             ))}
           </div>
           <div className="mobile-nav__foot">
+            <LiveClock />
             <Button variant="gold" size="lg" block to="/admissions#apply">Apply for Admission</Button>
             <div className="row">
               <Button variant="outline" to="/login?role=parent" icon={Users}>Parent</Button>

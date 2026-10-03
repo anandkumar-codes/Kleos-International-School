@@ -410,12 +410,17 @@ export function generateRecords() {
   const now = new Date();
   const { students, payments } = generateStudents(now);
   const demo = pinDemoStudents(students);
-  // Parent demo: Aarav has paid installment 1 only, so the portal shows a real due + Pay now flow.
+  // Parent demo: Aarav has paid installment 1 only, so the portals show a real due + Pay now flow.
   const aarav = students.find((x) => x.id === demo.parentChildId);
-  const keep = payments.filter((p) => p.studentId !== aarav.id || p.term === 'Installment 1');
+  const others = payments.filter((p) => p.studentId !== aarav.id);
+  const inst1 = Math.round(aarav.annualFee / 4);
   payments.length = 0;
-  payments.push(...keep);
-  aarav.feePaid = keep.filter((p) => p.studentId === aarav.id).reduce((a, p) => a + p.amount, 0);
+  payments.push(...others, {
+    id: 'PAY-4099', receiptNo: 'KIS/26-27/4099', studentId: aarav.id, studentName: aarav.name, class: `${aarav.class}-${aarav.section}`,
+    amount: inst1, mode: 'UPI', term: 'Installment 1', date: new Date(now.getTime() - 112 * 86400000).toISOString(), status: 'Success',
+  });
+  aarav.feePaid = inst1;
+  aarav.feeStatus = 'Pending';
   // keep payment names in sync with pinned demo students
   payments.forEach((p) => {
     const s = students.find((x) => x.id === p.studentId);

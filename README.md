@@ -23,6 +23,12 @@ npm run build      # production build in dist/
 The login page has a **Fill** button that enters the demo credentials. In the admin,
 press **Ctrl + K** for global search.
 
+## Mobile app
+
+The `mobile/` folder contains the Kleos School app for Android and iOS (Expo / React Native), with visitor,
+parent, student and staff experiences. It reuses this website's data files. See [mobile/README.md](mobile/README.md)
+to run it on a phone with Expo Go or build an APK.
+
 ## What's included
 
 - **Public website**: Home, About (with a history timeline), Academics, Admissions (validated enquiry form),

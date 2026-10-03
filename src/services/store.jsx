@@ -7,7 +7,7 @@ import { uid } from '../utils/format';
 // website reads, so content edits appear on the site instantly. Each collection is
 // persisted to its own localStorage key — swap `persist`/`load` for API calls later.
 
-const VERSION = 'kleos:v4';
+const VERSION = 'kleos:v5';
 const key = (name) => `${VERSION}:${name}`;
 
 function load(name) {
